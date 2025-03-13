@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 16px;
+      }
+      body {
+        background-color: #fff;
+        font-size: 30px;
+      }
+      .first {
+        font-size: 1em;
+      }
+      .second {
+        font-size: 1rem;
+      }
+      .third {
+        font-size: 1rem;
+      }
+      .sample {
+        width: 50%;
+        background-color: azure;
+        float: right;
+      }
+      .sample1 {
+        width: 50%;
+        background-color: rgb(118, 120, 120);
+        float: left;
+      }
+      .clear-float {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sample1">
+      <p class="first">This</p>
+      <p class="second">That</p>
+    </div>
+    <div class="sample">
+      <p class="first">This</p>
+      <p class="second">That</p>
+    </div>
+    <div class="clear-float"></div>
+    <p class="third">That</p>
+
+    <p id="demo"></p>
+    <p id="str"></p>
+    <button type="button" onclick="but()">Click me and see what happens</button>
+    <button
+      type="button"
+      onclick="alert(strConkat('Ahmed made this feature.' ,'Yay!!!!! its working'))"
+    >
+      Click me and see!
+    </button>
+
+    <script>
+      document.write("I am a boy");
+      document.querySelector("#demo").innerHTML = "this is right";
+      document.getElementById("str").innerHTML = strConkat(
+        "Something that partners.",
+        "With me!!."
+      );
+
+      function but() {
+        alert("Am here");
+      }
+
+      function strConkat(txt1, txt2) {
+        return txt1.toString() + " " + txt2.toString();
+      }
+    </script>
+  </body>
+</html>
